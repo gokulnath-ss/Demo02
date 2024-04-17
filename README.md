@@ -1,7 +1,7 @@
 # Day 1 Task
 **1.HTTP.1 vs 2**
 
-[write a blog on difference between http.1 vs http2](https://docs.google.com/document/d/1gm20gY6SEuG1qU5U_KtYYS9FEr7esQvGhI-5tFPG068/edit?usp=sharing)
+[write a blog on difference between http.1 vs http2](https://docs.google.com/document/d/1CHADBTvg8B__oppNnSwFLO8tIu_H_ojfSEz0un748d4/edit?usp=sharing)
 
  **2. object Internal Reprenstation**
 
