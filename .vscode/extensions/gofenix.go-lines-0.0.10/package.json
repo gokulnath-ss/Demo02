@@ -1,0 +1,90 @@
+{
+	"publisher": "gofenix",
+	"name": "go-lines",
+	"displayName": "go-lines",
+	"version": "0.0.10",
+	"private": true,
+	"packageManager": "pnpm@8.10.5",
+	"description": "",
+	"author": "Fenix",
+	"license": "MIT",
+	"funding": "https://github.com/sponsors/gofenix",
+	"homepage": "https://github.com/gofenix/go-lines#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gofenix/go-lines"
+	},
+	"bugs": {
+		"url": "https://github.com/gofenix/go-lines/issues"
+	},
+	"sponsor": {
+		"url": "https://github.com/sponsors/gofenix"
+	},
+	"categories": [
+		"Programming Languages",
+		"Formatters"
+	],
+	"main": "./dist/index.js",
+	"icon": "res/go.png",
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"vscode": "^1.84.2"
+	},
+	"activationEvents": [
+		"onStartupFinished",
+		"workspaceContains:**/*"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "go-lines.init",
+				"title": "go-lines init"
+			},
+			{
+				"command": "go-lines.format",
+				"title": "go-lines format"
+			}
+		]
+	},
+	"scripts": {
+		"build": "tsup src/index.ts --external vscode",
+		"dev": "nr build --watch",
+		"lint": "eslint .",
+		"vscode:prepublish": "nr build",
+		"publish": "vsce publish --no-dependencies",
+		"pack": "vsce package --no-dependencies",
+		"test": "vitest",
+		"typecheck": "tsc --noEmit",
+		"release": "bumpp && nr publish"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "^1.2.1",
+		"@antfu/ni": "^0.21.10",
+		"@types/node": "^20.10.0",
+		"@types/vscode": "^1.84.2",
+		"@vscode/vsce": "^2.22.0",
+		"bumpp": "^9.2.0",
+		"eslint": "^8.54.0",
+		"esno": "^4.0.0",
+		"pnpm": "^8.11.0",
+		"rimraf": "^5.0.5",
+		"tsup": "^7.2.0",
+		"typescript": "^5.3.2",
+		"vite": "^4.5.0",
+		"vitest": "^0.34.6"
+	},
+	"__metadata": {
+		"id": "3c8d385f-c2c2-4181-a3fa-afb00e9d61e2",
+		"publisherId": "69094b34-04ff-4b7e-b0cb-e0b3cf45d9c5",
+		"publisherDisplayName": "gofenix",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1714053468216,
+		"pinned": false,
+		"source": "gallery"
+	}
+}
